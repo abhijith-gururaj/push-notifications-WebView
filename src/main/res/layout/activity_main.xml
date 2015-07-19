@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bgimage"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linLayout"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtName"
+            style="@style/You.EditText.Style"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dip"
+            android:layout_marginBottom="20dip"
+            android:background="#ffffff"
+            android:hint="NAME" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            style="@style/You.EditText.Style"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dip"
+            android:background="#ffffff"
+            android:hint="EMAIL" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textColor="#158d58"
+            android:background="#e3e4ea"
+            android:text="GET STARTED" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="-20dp"
+        android:layout_above="@id/linLayout"
+        android:src="@drawable/op_logo_white"/>
+</RelativeLayout>
